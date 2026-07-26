@@ -31,3 +31,20 @@ http://localhost:8000
 
 ## Author
 Basanti Meghwal
+
+## Screenshots
+
+### Home Page
+![Home Page](Home.png)
+
+### Products Page
+![Products Page](Products.png)
+
+### Categories Page
+![Categories Page](Categories.png)
+
+### Contact Page
+![Contact Page](Contact.png)
+
+### Cart Page
+![Cart Page](Cart.png)
