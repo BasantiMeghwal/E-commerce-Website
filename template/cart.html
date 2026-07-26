@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-ShopEasy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/cart.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"> 🏪 ShopEasy</div>
+        <input type="search" id="inp" placeholder="Search products...">
+        <button id="btn">🛒 Cart</button>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="head_section">
+        <h2>Your cart🛒</h2>
+<p>Add some products to get started.</p>
+    </section>
+    <section id="cartSection" class="cart_section">
+
+    </section>
+    <div id="total" class="total">
+        <h3>Total: ₹0</h3>
+    </div>
+
+
+    <script src="/script.js"></script>
+    <script>
+
+        let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let cartSection = document.getElementById("cartSection");
+
+        if (cartData.length > 0) {
+
+            let total = 0;
+
+            cartData.forEach(function (product) {
+
+                total += Number(product.price);
+
+                cartSection.innerHTML += `
+                <div class="cart_items">
+                <img src="${product.image}">
+                <h3>${product.name}</h3>
+                <p>₹${product.price}</p>
+                <button class="remove_item" >Remove</button>
+                </div>
+                 `;
+
+            });
+
+            document.getElementById("total").innerHTML = `
+            <h3>Total: ₹${Number(total.toFixed(2))}</h3>
+            <a href="/success">
+    <button>Checkout</button>
+</a>
+            `;
+        }
+ else {
+            cartSection.innerHTML = "Your Cart is Empty!";
+        }
+
+      
+        let removeButtons = document.querySelectorAll(".remove_item")
+        removeButtons.forEach((button,index,total)=>{
+            button.addEventListener('click',()=>{
+                cartData.splice(index,1)
+                localStorage.setItem("cart",JSON.stringify(cartData))
+                location.reload()
+            })
+        })
+        
+       
+    </script>
+    
+</body>
+
+</html>
