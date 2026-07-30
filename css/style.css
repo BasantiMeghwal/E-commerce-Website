@@ -72,6 +72,11 @@ body {
 .navbar ul li a:hover {
     color: #ff6b35;
 }
+.navbar ul .auth-buttons a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 .first_section {
     background-color: #ff7949;
@@ -186,7 +191,6 @@ section h2 {
 .offers p {
 
     margin: 12px;
-
     font-size: 18px;
 
 }

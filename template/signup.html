@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | ShopEasy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/signup.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="logo"> 🏪 ShopEasy</div>
+        <input type="search" id="inp" placeholder="Search products...">
+        <a href="cart.html"><button id="btn">🛒 Cart</button></a>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+
+            <li><a href="/">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+           <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+
+        </ul>
+
+    </nav>
+      <div class="container">
+
+        <!-- Left Side -->
+        <div class="left">
+            <img src="sign.png" alt="Sign Up">
+        </div>
+
+    <!-- Right Side -->
+<div class="right">
+
+    <h1>Create Account 🎉</h1>
+
+    <p>Create your account to start shopping</p>
+
+    <form action="/signup" method="POST">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <input type="email" name="email" placeholder="Email Address" required>
+
+        <input type="password" name="password" id="password" placeholder="Create Password" required>
+
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+        <small id="passwordMsg"></small>
+        <button type="submit" class="btn">
+            Sign Up
+        </button>
+
+    </form>
+
+    <div class="signup">
+
+        <p>Already have an account?</p>
+
+        <a href="login.html">Login</a>
+
+    </div>
+
+</div>
+    
+      </div>
+      <script>
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
+const passwordMsg = document.getElementById("passwordMsg");
+
+confirmPassword.addEventListener("input", function(){
+
+    if(password.value !== confirmPassword.value){
+
+        passwordMsg.innerHTML = "❌ Password does not match";
+        passwordMsg.style.color = "red";
+
+    } else {
+
+        passwordMsg.innerHTML = "✅ Password matched";
+        passwordMsg.style.color = "green";
+
+    }
+
+});
+</script>
+</body>
+
+</html>
