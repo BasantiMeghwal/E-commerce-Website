@@ -9,6 +9,8 @@ A simple e-commerce website built using HTML, CSS, JavaScript, Node.js, Express.
 - Contact form
 - Backend using Node.js and Express.js
 - MongoDB database integration
+- User login functionality
+- User signup functionality
 
 ## Technologies Used
 - HTML5
@@ -29,8 +31,6 @@ node app.js
 3. Open in browser:
 http://localhost:8000
 
-## Author
-Basanti Meghwal
 
 ## Screenshots
 
@@ -48,3 +48,12 @@ Basanti Meghwal
 
 ### Cart Page
 ![Cart Page](Cart.png)
+
+### Login Page
+![Login Page](template/login.png)
+
+### Signup Page
+![Signup Page](template/sign.png)
+
+## Author
+Basanti Meghwal
