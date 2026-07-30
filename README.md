@@ -35,19 +35,19 @@ http://localhost:8000
 ## Screenshots
 
 ### Home Page
-![Home Page](Home.png)
+![Home Page](./Home.png)
 
 ### Products Page
-![Products Page](Products.png)
+![Products Page](./Products.png)
 
 ### Categories Page
-![Categories Page](Categories.png)
+![Categories Page](./Categories.png)
 
 ### Contact Page
-![Contact Page](Contact.png)
+![Contact Page](./Contact.png)
 
 ### Cart Page
-![Cart Page](Cart.png)
+![Cart Page](./Cart.png)
 
 ### Login Page
 ![Login Page](template/login.png)
