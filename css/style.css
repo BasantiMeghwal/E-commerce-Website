@@ -221,6 +221,7 @@ footer {
     display:none;
     font-size:30px;
     cursor:pointer;
+    color:white;
 }
 
     
@@ -256,17 +257,42 @@ footer {
     .navbar ul.active{
         display:flex;
     }
-    .navbar ul {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+    .navbar ul{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+}
+
+.navbar ul.active{
+    display:flex;
+}
 
     .navbar {
         padding: 10px;
     }
+        .first_section{
+    width:90%;
+        padding:60px 20px;
+        text-align:center;
+        min-height:auto;
+    }
 
+    .first_section h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .first_section p{
+        width:100%;
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .first_section button{
+        padding:12px 25px;
+        font-size:16px;
+    }
     .hero {
         min-height: 60vh;
         padding: 20px;
