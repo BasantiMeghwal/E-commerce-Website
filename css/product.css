@@ -106,3 +106,32 @@
             text-align: center;
             padding: 30px;
         }
+
+        @media(max-width:768px){
+
+.head_section {
+    padding: 60px 20px;
+}
+
+.head_section h1 {
+    font-size: 32px;
+}
+
+.head_section p {
+    width: 100%;
+}
+
+.product_section {
+    grid-template-columns: repeat(2,1fr);
+    padding:15px;
+    gap:15px;
+}
+
+.product_section .card {
+    width:100%;
+}
+
+.product_section .card img {
+    height:150px;
+}
+}

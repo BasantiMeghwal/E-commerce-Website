@@ -1,3 +1,7 @@
+function toggleMenu(){
+    document.getElementById("nav-links")
+    .classList.toggle("active");
+}
 let searchInp = document.getElementById("inp");
 if(searchInp){
 searchInp.addEventListener('keydown', function (e) {
